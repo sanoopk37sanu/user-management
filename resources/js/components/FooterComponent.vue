@@ -13,7 +13,6 @@ export default {
 </script>
 
 <style scoped>
-/* Custom styles for the footer */
 .footer {
   position: relative;
   bottom: 0;

@@ -24,5 +24,5 @@ export default {
 </script>
 
 <style scoped>
-/* Custom styles for the header */
+
 </style>

@@ -14,20 +14,19 @@
               placeholder="Search name/designation/department"
             />
           </div>
-          <div>
-            <div v-for="user in userInfoList" class="col-md-4 mb-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title"></h5>
-                  <p class="card-text">
+           <div class="row">
+            <div class="col-md-6 mb-6" v-for="user in userInfoList" style="margin-bottom: 25px;">
+                <div class="card" >
+                    <div class="card-body">
+                         <p class="card-text">
                     <strong>{{ user.Name }}:</strong>
                   </p>
                   <p class="card-text">{{ user.designation }}</p>
                   <p class="card-text">{{ user.department }}</p>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
+            </div>
         </div>
       </div>
     </div>
@@ -97,7 +96,6 @@ export default {
   },
 };
 </script>
-
 <style scoped>
 /* Add any scoped styles here */
 </style>
