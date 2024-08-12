@@ -19,7 +19,7 @@
                 <div class="card" >
                     <div class="card-body">
                          <p class="card-text">
-                    <strong>{{ user.Name }}:</strong>
+                    <strong>{{ user.Name }}</strong>
                   </p>
                   <p class="card-text">{{ user.designation }}</p>
                   <p class="card-text">{{ user.department }}</p>
@@ -80,12 +80,9 @@ export default {
           })
           .then((response) => {
             this.userInfoList = response.data.data;
-
-            this.loading = false;
           })
           .catch((error) => {
             this.error = error.message;
-            this.loading = false;
           });
       } catch (error) {
         console.error("Error fetching results:", error);
